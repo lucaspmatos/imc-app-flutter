@@ -34,7 +34,7 @@ class GeneralIMCPresenter implements IMCPresenter {
     _viewModel.height = height;
     _viewModel.weight = weight;
     _viewModel.imc = calculator(height, weight);
-    _view.updateBmiValue(_viewModel.imcInString, _viewModel.imcMessage);
+    _view.updateIMCValue(_viewModel.imcInString, _viewModel.imcMessage);
   }
 
   @override

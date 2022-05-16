@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import '../utils/interfaces.dart';
 import '../presenter/imc_presenter.dart';
 
-import 'components/calculate_button.dart';
+import 'components/components.dart';
 
 class HomePage extends StatefulWidget {
   final IMCPresenter? presenter;
@@ -51,7 +51,7 @@ class _HomePageState extends State<HomePage> implements IMCView {
   }
 
   @override
-  void updateBmiValue(String bmiValue, String bmiMessage) {
+  void updateIMCValue(String bmiValue, String bmiMessage) {
     setState(() {
       _imcString = bmiValue;
       _message = bmiMessage;
@@ -134,18 +134,13 @@ class _HomePageState extends State<HomePage> implements IMCView {
 
     return Scaffold(
         appBar: AppBar(
-          title: const Text('BMI'),
+          title: const Text('IMC'),
           centerTitle: true,
           backgroundColor: Colors.pinkAccent.shade400,
         ),
         backgroundColor: Colors.white,
         body: ListView(
           children: <Widget>[
-            Image.asset(
-              'images/bmilogo.png',
-              width: 100.0,
-              height: 100.0,
-            ),
             const Padding(padding: EdgeInsets.all(5.0)),
             _mainPartView,
             const Padding(padding: EdgeInsets.all(5.0)),
