@@ -1,6 +1,6 @@
 # IMC App
 
-Um aplicativo em Flutter para cálculo do IMC utilizando arquitetura MVP.
+An application in Flutter for calculating BMI and exercise the MVP architecture
 
 ## Getting Started
 
